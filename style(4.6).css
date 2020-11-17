@@ -1,0 +1,36 @@
+.chart {
+        width: 20em;
+        height: 20em;
+        display: flex;
+        align-items: flex-end;
+    }
+
+    .chart > * {
+        flex: 1;
+        margin: .5em;
+    }
+
+.chart1 {
+    height: 10%; 
+    background: red;
+}
+
+.chart2 {
+    height: 25%; 
+    background: orange;
+}
+
+.chart3 {
+    height: 50%; 
+    background: yellow;
+}
+
+.chart4 {
+    height: 75%; 
+    background: yellowgreen;
+}
+
+.chart5 {
+    height: 100%; 
+    background: green;
+}

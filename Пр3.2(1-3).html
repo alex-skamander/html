@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Практическое задание № 3.2(1-3)</title>
+  <style>
+    .shadow1{
+    box-shadow: 5px 5px 10px black;
+    width: 800px;
+    height: 400px;
+    }
+    .shadow2{
+    box-shadow: 5px 5px black;
+    width: 800px;
+    height: 400px;
+    box-shadow: 5px 5px red,
+    -5px -5px blue,
+    10px 10px 5px 2px green,
+    0 0 5px 5px;
+    transition: box-shadow 0.5s ease-out 0.5s;
+    }
+    .shadow2:hover{
+    box-shadow: 5px 5px black,
+    -5px -5px gray,
+    10px 10px 5px 2px yellow,
+    0 0 5px 5px blue;
+    }
+    .block{
+    background: gray;
+    width:400px;
+    height: 200px;
+    text-align: center;
+    padding: 200px;
+    box-shadow: 0 0 5px 2px red;
+    font-size: 2em;
+    font-family: Arial;
+    transition: background 0.5s ease-out 0.5s, color 0.5s ease out 0.5s;
+    }
+    .block:hover{
+    background: rgb(255, 196, 0);
+    color: white;
+    }
+    </style>
+    </head>
+    <body>
+    <p>
+    <img class="shadow1" src="Альпака.img" alt="">
+    </p>
+    <p>
+    <img class="shadow2" src="Сова.img" alt="">
+    </p>
+    <div class="block">Задача 3. Создать блок <div> с текстом и задать внутренний стиль для блока – задать цвет фона, параметры тени, отступы внутри блока.</div>
+    </body>
+    </html>

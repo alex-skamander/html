@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Практическое задание № 2.6</title>
+  <style media="screen">
+    html, body {
+  height: 100%;
+}
+
+body {
+  background: linear-gradient(cornflowerblue, white) no-repeat;
+  text-align: center;
+}
+   </style>
+</head>
+<body>
+    <script>
+        window.onload = function() {
+        var drawingCanvas = document.getElementById('circle');
+        var ctx = drawingCanvas.getContext('2d');
+        ctx.beginPath();
+        ctx.arc(100,55,50,0,Math.PI*2);
+        ctx.stroke();
+        ctx.closePath();
+        ctx.beginPath();
+        ctx.arc(100,55,25,0,Math.PI*2);
+        ctx.stroke();
+        ctx.closePath();
+        }
+        </script>
+        <p style="font-size: 1.5em; font-family:Arial"><b>Кудряшова Александра Николаевна</b></p>
+        <canvas id="circle" widht="400" height="400"></canvas>
+</body>
+</html>

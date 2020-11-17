@@ -1,0 +1,30 @@
+.table_dark {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+    font-size: 14px;
+    width: 600px;
+    text-align: left;
+    border-collapse: collapse;
+    background: white;
+    margin: 5px;
+  }
+  .table_dark th {
+    color: rgb(51, 112, 224);
+    border-bottom: 2px solid rgb(96, 145, 236);
+    padding: 12px 5px;
+  }
+  .table_dark td {
+    color: rgb(44, 86, 165);
+    padding: 7px 5px;
+  }
+  .table_dark tr:last-child td {
+    border-bottom: none;
+      text-decoration-color: rgb(44, 86, 165);
+  }
+  .table_dark td:last-child {
+    border-right: none;
+      text-decoration-color: rgb(44, 86, 165);
+  }
+  .table_dark tr:hover td {
+    text-decoration: underline;
+      text-decoration-color: rgb(44, 86, 165);
+  }

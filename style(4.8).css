@@ -1,0 +1,39 @@
+.block1:hover {
+  transform-origin: 0;
+  transform: rotate(50deg);
+  transform: scale(15, -20);
+  transform: skewX(10deg);
+  transform: translate(70, 50);
+}
+
+.block2:hover {
+  transform-origin: 0;
+  transform: rotate(70deg);
+  transform: scale(40, -10);
+  transform: skewX(80deg);
+  transform: translate(70, 100);
+}
+
+.block3:hover {
+  transform-origin: 0;
+  transform: rotate(60deg);
+  transform: scale(50, -20);
+  transform: skewX(40deg);
+  transform: translate(70, 50);
+}
+
+.block4:hover {
+  transform-origin: 0;
+  transform: rotate(80deg);
+  transform: scale(20, -30);
+  transform: skewX(50deg);
+  transform: translate(70, 70);
+}
+
+.block5:hover {
+  transform-origin: 0;
+  transform: rotate(70deg);
+  transform: scale(40, -10);
+  transform: skewX(-50deg);
+  transform: translate(70, 0);
+}

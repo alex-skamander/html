@@ -1,0 +1,19 @@
+body {
+    padding: 20px;
+    text-align: center;
+    }
+  .cl_radic {
+    font: bold 350% Serif;
+    display: inline-block;
+  }
+  .cl_number {
+    font: italic 250% serif;
+    display: inline-block;
+    position: relative;
+    top: -5px;
+    padding-top: 6px; 
+
+   }
+   .cl_number {
+    border-top: 2px solid black;
+    }

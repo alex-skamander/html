@@ -1,0 +1,20 @@
+.battery {
+  width: 170px;
+  height: 50px;
+  border: 5px solid black;
+  margin: 20px 20px;
+  position: relative;
+  box-shadow: 25px 0px 0px -20px black;
+}
+
+.battery__low {
+  background: linear-gradient(to right, red 0%, red 33.33%, white 33.33%);
+}
+
+.battery__medium {
+  background: linear-gradient(to right, yellow 0%, yellow 66.66%, white 33.33%);
+}
+
+.battery__full {
+  background: green;
+}
