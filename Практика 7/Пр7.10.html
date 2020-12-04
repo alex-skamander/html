@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <style>
+      body {
+        margin: 10px auto;
+        width: 470px;
+      }
+
+      h3 {
+        margin: 0;
+        padding-bottom: 0.3em;
+        padding-right: 20px;
+        font-size: 1.1em;
+      }
+
+      p {
+        margin: 0;
+        padding: 0 0 0.5em;
+      }
+
+      .animal {
+        background: linear-gradient(to right, lightblue, violet);
+        padding: 10px 20px 10px;
+        border-top: solid 2px white;
+        position: relative;
+      }
+
+      .remove-button {
+        position: absolute;
+        font-size: 110%;
+        top: 0;
+        color: blueviolet;
+        right: 10px;
+        display: block;
+        width: 24px;
+        height: 24px;
+        border: none;
+        background: transparent;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div>
+      <div class="animal">
+        <h3>Капибара</h3>
+        <p>
+          Самый большой грызун не только в Южном полушарии, но и во всём мире.
+          Русское название — Капибара, или водосвинка. Обычный вид, не относится
+          к охраняемым.
+        </p>
+      </div>
+      <div class="animal">
+        <h3>Попугаи</h3>
+        <p>
+          Это очень яркие и красивые пернатые. Их оперение окрашено в зелёные,
+          красные, жёлтые, синие, голубые, фиолетовые, чёрные, белые и другие
+          тона и представляет собой всевозможные их сочетания. Кроме того, эти
+          птицы необычайно умны и славятся тем, что у них хорошо развиты память
+          и способность к звукоподражанию. Полушария головного мозга у попугаев
+          крупнее, чем у других пернатых, поэтому и неудивительно, что они такие
+          сообразительные.
+        </p>
+      </div>
+      <div class="animal">
+        <h3>Киви</h3>
+        <p>
+          Это род нелетающих птиц, родина которых — далекая Новая Зеландия. Эти
+          существа удивительно напоминают млекопитающих: они передвигаются по
+          земле, имеют оперение, очень похожее на шерсть, а также температуру
+          тела 38 °C. В роду у киви пять видов — это Южный киви, Северный бурый
+          киви, Большой серый киви, Малый серый киви и Рови.
+        </p>
+      </div>
+    </div>
+
+    <script>
+      let animals = document.querySelectorAll(".animal");
+
+      for (let animal of animals) {
+        animal.insertAdjacentHTML(
+          "afterbegin",
+          '<button class="remove-button">[x]</button>'
+        );
+        animal.firstChild.onclick = () => animal.remove();
+      }
+    </script>
+  </body>
+</html>

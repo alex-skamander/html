@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .tree span:hover {
+        font-weight: bold;
+      }
+      .tree span {
+        cursor: pointer;
+      }
+    </style>
+    <meta charset="utf-8" />
+  </head>
+  <body>
+    <ul class="tree" id="tree">
+      <li>
+        Дикие животные
+        <ul>
+          <li>
+            Семейство кошачьих
+            <ul>
+              <li>Гепард</li>
+              <li>Черная пантера в черном panamera</li>
+              <li>Пума</li>
+              <li>Лев</li>
+            </ul>
+          </li>
+          <li>
+            Семейство псовых
+            <ul>
+              <li>Волк в цирке не выступает</li>
+              <li>Койот</li>
+              <li>Песец нам</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>
+        Домашние животные
+        <ul>
+          <li>
+            Птицы
+            <ul>
+              <li>Попугай</li>
+              <li>
+                И все о том же с утра щебечет Канарейка... Лишь у любви у нашей
+                села батарейка... О О И Я И Ё БАТАРЕЙКА
+              </li>
+            </ul>
+          </li>
+          <li>
+            Грызуны
+            <ul>
+              <li>Морская свинка</li>
+              <li>Кролик Аслахан</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+    <script>
+      for (let li of tree.querySelectorAll("li")) {
+        let span = document.createElement("span");
+        li.prepend(span);
+        span.append(span.nextSibling);
+      }
+      tree.onclick = function (event) {
+        if (event.target.tagName != "SPAN") {
+          return;
+        }
+        let childrenContainer = event.target.parentNode.querySelector("ul");
+        if (!childrenContainer) return;
+        childrenContainer.hidden = !childrenContainer.hidden;
+      };
+    </script>
+  </body>
+</html>
